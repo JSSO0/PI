@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+
+
+
+
+
+
+.navbar {
+    height: 100vh;
+    width: 100px;
+    /* Largura da barra de navegação */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4F4F4F;
+    /*rgba(151, 217, 225, 1);*/
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 10px;
+
+}
+
+
+.navbar a {
+    text-decoration: none;
+    /* color: white;*/
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    margin-bottom: 5%;
+}
+
+h1,
+h3,
+h2,
+h5,
+h4,
+h6,
+p {
+    color: #4F4F4F;
+    font-family: IBM Plex Sans;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+
+#fundo {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgba(217, 175, 217, 0.2), rgba(15, 204, 227, 0.2), rgba(151, 217, 225, 0.2));
+    background-size: 500%;
+    animation: degrade 20s infinite alternate;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%
+    }
+
+    100% {
+        background-position-x: 100%
+    }
+}
+
+#graficos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}

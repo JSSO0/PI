@@ -1,0 +1,193 @@
+<div class="l-main">
+    <!-- start nav -->
+    <nav class="l-main__side-menu">
+      <a class="l-main__side-menu--close-icon">
+        <span class="icon-close"></span>
+      </a>
+      
+      <!-- menu options -->
+      <ul class="c-sidebar-menu">
+        <div class="c-sidebar-menu__logo">
+          <img class="c-sidebar-menu__logo--image" src="https://cdn.chattigo.com/assets/img/logo-white.svg" alt="logo"/>
+        </div>
+        
+        <li class="c-sidebar-menu__item">
+          <span class="c-sidebar-menu__icon icon-emoji"></span>
+          
+          <span class="c-sidebar-menu__label">
+            Agente
+          </span>
+        </li>
+        
+        <li class="c-sidebar-menu__item">
+          <span class="c-sidebar-menu__icon icon-message-visible"></span>
+          
+          <span class="c-sidebar-menu__label">
+            Supervisor
+          </span>
+        </li>
+  
+        <hr />
+        
+        <li class="c-sidebar-menu__item">
+          <span class="c-sidebar-menu__icon icon-config"></span>
+          
+          <span class="c-sidebar-menu__label">
+            Configuración
+          </span>
+        </li>
+        
+        <li class="c-sidebar-menu__item c-sidebar-menu__item--active">
+          <span class="c-sidebar-menu__icon icon-reports"></span>
+          
+          <span class="c-sidebar-menu__label">
+            Analítica
+          </span>
+        </li>
+        
+        <li class="c-sidebar-menu__item c-sidebar-menu__item--user-logged-in">
+          <div class="c-sidebar-menu__user">
+            <img class="c-sidebar-menu__user--image" src="https://cdn.chattigo.com/assets/img/profiles/1_dummy.png"/>
+          </div>
+          
+          <span class="c-sidebar-menu__label">
+            User Name User Name User Name User Name User Name
+          </span>
+        </li>
+        
+        <li class="c-sidebar-menu__item c-sidebar-menu__item--log-out">
+          <span class="c-sidebar-menu__icon icon-logout"></span>
+          
+          <span class="c-sidebar-menu__label">
+            Cerrar Sesión
+          </span>
+        </li>
+      </ul>
+    </nav>
+    <!-- Fin nav -->
+    
+    <!-- Contenido -->
+    <!-- el modificador --two-halfs es la clave -->
+    <div class="l-main__content l-main__content--two-halfs">
+      <header class="l-dashboard__header">
+        <h3 class="l-dashboard__header--title">
+          Analítica
+          
+          <a class="l-main__side-menu--open-icon">
+            <span class="icon-sidebar"></span>
+          </a>
+        </h3>
+      </header>
+      
+      <!-- wrapper para ordenar las card en columnas -->
+      <div class="l-main__content--wrapper">
+        <div class="c-section-card">
+          <div class="c-section-card__header">
+            <label class="c-section-card__header--label">
+              Tipificaciones
+            </label>
+          </div>
+          
+          <div class="c-section-card__content">
+            <!-- ejemplo de tabs -->
+            <div class="c-permit-tab">
+              <input type="radio" name="tab" id="c-permit-tab-st" checked></input>
+              <input type="radio" name="tab" id="c-permit-tab-nd"></input>
+              <input type="radio" name="tab" id="c-permit-tab-rd"></input>
+              <input type="radio" name="tab" id="c-permit-tab-er"></input>
+              <input type="radio" name="tab" id="c-permit-tab-to"></input>
+  
+              <nav class="c-permit-tab__nav">
+                <label for="c-permit-tab-st">General</label>
+                <label for="c-permit-tab-nd">1er Nivel</label>
+                <label for="c-permit-tab-rd">2do Nivel</label>
+                <label for="c-permit-tab-er">3er Nivel</label>
+                <label for="c-permit-tab-to">4to Nivel</label>
+              </nav>
+              
+              <div class="c-permit-tab-st-content">
+                General
+              </div>
+    
+              <div class="c-permit-tab-nd-content">
+               <canvas id="ctx"></canvas>
+              </div>
+    
+              <div class="c-permit-tab-rd-content">
+                2do Nivel
+              </div>
+                
+              <div class="c-permit-tab-er-content">
+                3er Nivel
+              </div>
+                
+              <div class="c-permit-tab-to-content">
+                4to Nivel
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="c-section-card">
+          <div class="c-section-card__header">
+            <label class="c-section-card__header--label">
+              Cantidad de chats
+            </label>
+          </div>
+          
+          <div class="c-section-card__content">
+            <!-- agregar graficos -->
+          
+          <canvas id="chart"></canvas>
+    
+          </div>
+        </div>  
+      </div>
+      
+      <!-- wrapper para ordenar las card en columnas -->
+      <div class="l-main__content--wrapper">
+        <div class="c-section-card">
+          <div class="c-section-card__header">
+            <label class="c-section-card__header--label">
+              Nivel de servicio
+            </label>
+          </div>
+          
+          <div class="c-section-card__content">
+            <!-- agregar graficos -->
+            
+            <canvas id="hBar" ></canvas>
+          </div>
+        </div>
+        
+        <div class="c-section-card">
+          <div class="c-section-card__header">
+            <label class="c-section-card__header--label">
+              Cantidad de chats por canal
+            </label>
+          </div>
+          
+          <div class="c-section-card__content">
+            <!-- agregar graficos -->
+            
+            
+    <canvas id="bar-chart" ></canvas>
+          </div>
+        </div>
+        
+        <div class="c-section-card"> 
+          <div class="c-section-card__header">
+            <label class="c-section-card__header--label">
+              Chats atendidos por agentes
+            </label>
+          </div>
+          
+          <div class="c-section-card__content">
+            <!-- agregar graficos -->
+      <canvas id="ctxDonut" ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Contenido -->
+  </div>
