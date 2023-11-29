@@ -57,7 +57,7 @@ p {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to right, rgba(217, 175, 217, 0.2), rgba(15, 204, 227, 0.2), rgba(151, 217, 225, 0.2));
-    background-size: 500%;
+    background-size: 100%;
     animation: degrade 20s infinite alternate;
 }
 
@@ -71,9 +71,72 @@ p {
     }
 }
 
-#graficos{
+#graficos {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+#texto {
+    text-align: center;
+}
+
+#catg_comprada,
+#qtd_compras {
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.6);
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#qtd_compras {
+    margin-left: 2%;
+}
+
+.circle-chart {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle-chart svg {
+    transform: rotate(-90deg);
+}
+
+.circle-chart circle {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 10;
+    stroke-dasharray: 200;
+    /* 82% de preenchimento (260 é 82% de 318.47) */
+    stroke-dashoffset: 0;
+}
+
+.circle-chart .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #3498db;
+}
+
+#acuracia {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.6);
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 5px;
+    width: 40%;
+}
+
+#texto1{
+    text-align: center;
 }
